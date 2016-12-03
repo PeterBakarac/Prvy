@@ -1,0 +1,71 @@
+%----------------------------------------------------------------%
+%   MY OWN FORMATTING                                            %
+%----------------------------------------------------------------%
+\setlength{\parindent}{0pt}
+
+\pagestyle{fancy}
+
+\renewcommand{\sectionmark}[1]{%
+\markboth{#1}{}}
+
+\cfoot{\thepage}
+
+
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\setlength{\parskip}{6pt}
+
+
+
+% \pagestyle{fancyplain}
+% \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+% \renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+% \lhead[\fancyplain{}{\sffamily\bfseries\thepage}]%
+      % {\fancyplain{}{\sffamily\bfseries\rightmark}}
+% \rhead[\fancyplain{}{\sffamily\bfseries\leftmark}]%
+      % {\fancyplain{}{\sffamily\bfseries\thepage}}
+% \cfoot{}
+
+%==================================================================================================
+% CHAPTER AND APPENDIX STYLING SETUP
+%==================================================================================================
+%\renewcommand{\chaptername}{C h a p t e r }
+%\renewcommand{\appendixname}{A p p e n d i x }
+%
+% \def\@makechapterhead#1{%
+  % \vspace*{50\p@}%
+  % {\parindent \z@ \raggedright \normalfont
+   % \ifnum \c@secnumdepth >\m@ne
+      % \if@mainmatter
+        % \large\scshape \@chapapp \space\space \Huge\upshape\thechapter
+        % \par\nobreak
+        % \vskip 20\p@
+      % \fi
+    % \fi
+    % \interlinepenalty\@M
+    % \flushleft\parbox{\textwidth}{\raggedleft \sffamily\Huge\bfseries  #1}
+     % \par\nobreak
+     % \vskip 15pt
+     % \hrule height 0.4pt
+    % \vskip 80\p@
+  % }}
+
+% \def\@makeschapterhead#1{%
+  % \vspace*{50\p@}%
+  % {\parindent \z@ \raggedright \normalfont
+    % \interlinepenalty\@M
+     % \sffamily\huge\bfseries  #1
+     % \par\nobreak
+     % \vskip 15pt
+     % \hrule height 0.4pt
+    % \vskip 80\p@
+  % }}
+% % % EOF % % %
+
+% table, matrix: align to decimal point
+\newcolumntype{.}{D{.}{.}{-1}}
+
+\numberwithin{equation}{section} %sets equation numbers <chapter>.<section>.<index>
+%\numberwithin{figure}{section} 
+
+% \numberwithin{table}{chapter}

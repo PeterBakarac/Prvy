@@ -1,0 +1,67 @@
+%----------------------------------------------------------------%
+%   MAIN TEX FILE                                                %
+%----------------------------------------------------------------%
+% Document Class Follow:                                         %
+%                                                                %
+% Mandatory Input:          report, article, book, beamer        %
+%                                                                %
+% Options:  Font            10pt, 11pt, 12pt                     %
+%           Paper Size      a4paper, a5paper, b5paper, ...       %
+%           Title           titlepage, notitlepage               %
+%           Printer out     twoside, oneside                     %
+%           Equation align  fleqn                                %
+%           Debugging       draft                                %
+%                                                                %
+%----------------------------------------------------------------%
+\documentclass[11pt, a4paper, titlepage, oneside, fleqn]{article}
+
+\newcommand{\GEOMETRY}{bottom=3.5cm, left=3cm, right=3cm, top=3.5cm}
+\usepackage[\GEOMETRY]{geometry}
+
+%----------------------------------------------------------------%
+%   Include Packages                                             %
+%----------------------------------------------------------------%
+\input{tex/pck}
+\usepackage{relsize}
+\usepackage{mcode}
+\usepackage{algorithmicx}
+
+
+%----------------------------------------------------------------%
+%   Include Custom TeX Commands                                  %
+%----------------------------------------------------------------%
+\input{tex/cmd}
+\linespread{1.3}
+
+%----------------------------------------------------------------%
+%   Include Formatting Headers, Numbering, etc.                  %
+%----------------------------------------------------------------%
+\input{tex/frmt}
+
+%% hlavicka vlavo
+\lhead{Nazov prace}
+
+%% hlavicka vpravo
+\rhead{Peter Bakaráč}
+% \rhead{ }
+%----------------------------------------------------------------%
+%   HYPERLINKS                                                   %
+%   http://en.wikibooks.org/wiki/LaTeX/Hyperlinks                %
+%----------------------------------------------------------------%
+\usepackage[bookmarks=true, colorlinks=true, linkcolor=blue, pdfstartview={FitV}, citecolor=dark_green, linktoc=all, urlcolor = blue]{hyperref}
+\newcommand{\hinf}{${\cal{H}} _{\infty}\;$}
+
+%----------------------------------------------------------------%
+%   Other Mandatory Commands                                     %
+%----------------------------------------------------------------%
+\author{Peter Bakaráč}
+\title{Nazov prace}
+\date{\today}
+\usepackage{amsmath}
+
+
+\begin{document}
+
+Dokument
+
+\end{document}
